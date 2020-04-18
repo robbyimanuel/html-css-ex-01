@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ngoding itu ga sulit</title>
+		<style>
+			body{
+				font-family:"Century Gothic","segoe UI","Tahoma","Geneva";
+			}
+			nav{
+				text-align:center;
+				position:fixed;
+				top:0px;
+				width:100%;
+				z-index:10;
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+			nav ul{
+				list-style:none;
+				margin:0px;
+				padding:0px;
+			}
+			nav ul li{
+				display:inline-block;
+				padding:8px 16px;
+				text-decoration: none;
+			}
+			nav ul li a{
+				color:#ff5800;
+			}
+			.container{
+				max-width:840px;
+				margin:auto;
+			}
+			div #hello{
+				height:480px;
+				background-color:deepskyblue;
+			}
+			.banner{
+				overflow:hidden;
+				height:100%;
+				position:relative;
+			}
+			.banner small{
+				position:absolute;
+				left:16px;
+				bottom:16px;
+				color:ghostwhite;
+				z-index: 10;
+			}
+			.banner h1{
+				color:white;
+				background-color:rgba(0, 0, 0, 0.7);
+				padding:16px 32px;
+				display:inline-block;
+				position:absolute;
+				bottom:60px;
+				z-index:10;
+			}
+			#wrapper h2{
+				text-align:center;
+			}
+			#course article{
+				width:33.33%;
+				padding:16px;
+				display:table-cell;
+			}
+			.identitas{
+				color:tomato;
+				font-weight:bold;
+				font-size:18px;
+			}
+			div #about span{
+				display:block;
+			}
+			div #about{
+				text-align:center;
+			}
+			div #course,#about,#contact{
+				padding:40px 0px;
+			}
+			footer{
+				background-color: royalblue;
+				color:azure;
+				top:120px;
+				text-align:center;
+				padding:32px 0px;
+			}
+			input[type=text]{
+				width:100%;
+				padding:10px 20px;
+				margin:5px 0px;
+				border:2px solid black;
+				border-radius:5px;
+			}
+			button{
+				width:105%;
+				padding:10px 20px;
+				margin:5px 0px;
+				border-radius:5px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href = "#hello">Hello</a></li>
+				<li><a href = "#course">Course</a></li>
+				<li><a href = "#about">About</a></li>
+				<li><a href = "#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+		<div class="container" id="wrapper">
+			<div id="hello">
+				<div class="banner">
+					<h1>Ngoding itu ga susah</h1>
+					<img src="assets/banner.jpg" alt="Gambar Latar">
+					<small>Perlu dibiasakan aja</small>
+				</div>
+			</div>
+
+			<div id="course">
+				<h2>Course yang telah diselesaikan</h2>
+				<article>
+					<h3>Machine Learning</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!</p>	
+				</article>
+				<article>
+					<h3>Predictive Analysis</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.</p>
+				</article>
+				<article>
+					<h3>Inclusive Design Pattern</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?</p>
+				</article>
+			</div>
+
+			<div id="about">
+				<h2>Tentang Saya</h2>
+				<span class="identitas">Robby Imanuel, 17412165</span>
+				<p>Nama saya adalah Robby Imanuel. nama panggilan saya adalah robby. saya lahir di Pontianak pada tanggal 30 November 1999 dan umur saya sekarang adalah 20 tahun. 
+					agama saya adalah kristen protestan, dan hobby saya adalah menggambar.
+					<br>Email : robbyimanuel223444@gmail.com     No hp : 085705340508    Alamat : Jl.Selat panjang
+				</p>
+				<h2>Hubungi Saya</h2>
+				<span>Email : robbyimanuel223444@gmail.com</span>
+				<span>No hp : 085705340508</span>
+				<span>Alamat : Jl.Selat panjang</span>
+			</div>
+
+			<div id="contact">
+				<h2>Kirim pesan ke saya</h2>
+				<form method ="POST" action="#">
+					Nama :<br>
+					<label for="nama"><input type="Text" name="nama" id="nama" placeholder="Nama" required></label>
+					Email :<br>
+					<label for="email"><input type="Text" name="email" id="email" placeholder="Email" required></label>
+					Message :<br>
+					<label for="message"><input type="Text" name="message" id="message" placeholder="Message" required></label>
+					<button type="submit">Kirim</button>
+				</form>
+			</div>
+		</div>
+		<footer>
+			<p>Copyright hari ini, sebuah pencapaian kecil</p>
+		</footer>
+	</body>
+</html> 
